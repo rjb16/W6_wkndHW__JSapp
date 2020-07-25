@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <h1>The Global Sports Hall of Fame</h1>
+
+    <form id="new-item-form">
+            <div id="form-wrapper">
+              <div class="form-item">
+                <label for="first_name" class="primary">First name</label>
+                <input type="text" id="first_name" required/>
+              </div>
+      
+              <div class="form-item">
+                <label for="last_name" class="primary">Last name</label>
+                <input type="text" id="last_name" required/>
+              </div>
+      
+              <div class="form-item">
+                <label for="category" class="primary">Sport</label>
+                <select id="category">
+                  <option value="" disabled selected></option>
+                  <option value="Boxing">Boxing</option>
+                  <option value="MMA">MMA</option>
+                  <option value="Rugby">Rugby</option>
+                  <option value="Tennis">Tennis</option>
+                  <option value="Rowing">Rowing</option>
+                  <option value="Golf">Golf</option>
+                </select>
+              </div>
+            </div>
+            <input type="submit" value="Add"/>
+          </form>
+      
+          <h1>Hall of Fame</h1>
+          <ul id="hall-of-fame"></ul>
+        </body>
+</html>
