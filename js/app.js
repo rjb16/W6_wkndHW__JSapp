@@ -3,9 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const form = document.querySelector('#new-item-form');
     form.addEventListener('submit', handleFormSubmit); //listener for the form submit
-  });
+
+    const deleteAll = document.querySelector('#delete-all');
+    deleteAll.addEventListener('click', handleDeleteAllClick);
+});
   
-  // this 
+
   const handleFormSubmit = function(event) {
     event.preventDefault(); //stops page refresh
   
@@ -22,4 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
     //resets after each submission
     document.getElementById('new-item-form').reset();
-  }
+ };
+
+ const handleDeleteAllClick = function() {
+     const list = document.querySelector('#hall-of-fame');
+     list.innerHTML = '';
+ }
+
